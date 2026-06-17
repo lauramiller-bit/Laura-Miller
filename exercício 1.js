@@ -115,3 +115,25 @@ console.log(`Total Vendido: R$ ${total.toFixed(2)}`);
 console.log(`Média de Vendas: R$ ${media.toFixed(2)}`);
 console.log(`Maior Venda: R$ ${maior.toFixed(2)}`);
 console.log(`Menor Venda: R$ ${menor.toFixed(2)}`);
+
+
+//exercício 10:
+// CONTROLE DE ESTOQUE //
+
+const produtos = [
+    { nome: "Teclado", quantidade: 12 },
+    { nome: "Mouse", quantidade: 3 },
+    { nome: "Monitor", quantidade: 8 },
+    { nome: "Headset", quantidade: 2 },
+    { nome: "Webcam", quantidade: 6 }
+];
+
+for (let i = 0; i < produtos.length; i++) {
+    let produto = produtos[i];
+
+    if (produto.quantidade < 5) {
+        console.log(`Produto: ${produto.nome} - Repor Estoque`);
+    } else {
+        console.log(`Produto: ${produto.nome} - Estoque OK`);
+    }
+}
