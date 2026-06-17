@@ -78,3 +78,11 @@ switch (opcao) {
 for (let tarefa = 1; tarefa <= 10; tarefa++) {
     console.log(`Executando tarefa ${tarefa}`);
 }
+
+
+//exercício 8:
+const equipe = ["Laura", "Sofia", "Mariana", "Ana.h", "Ana.k"];
+
+for (let i = 0; i < equipe.length; i++) {
+    console.log(`Integrante: ${equipe[i]}`);
+}
