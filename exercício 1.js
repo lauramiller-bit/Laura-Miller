@@ -46,9 +46,9 @@ if (prioridade === 1) {
 } else {
     console.log("Código de prioridade inválido.");
 }
-//
-//
-""
+
+
+
 //exercício 6:
 let opcao = 4;
 
@@ -71,4 +71,10 @@ switch (opcao) {
 
     default:
         console.log("Opção inválida.");
+}
+
+
+//exercício 7:
+for (let tarefa = 1; tarefa <= 10; tarefa++) {
+    console.log(`Executando tarefa ${tarefa}`);
 }
