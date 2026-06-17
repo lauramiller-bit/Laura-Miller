@@ -86,3 +86,32 @@ const equipe = ["Laura", "Sofia", "Mariana", "Ana.h", "Ana.k"];
 for (let i = 0; i < equipe.length; i++) {
     console.log(`Integrante: ${equipe[i]}`);
 }
+
+
+//exercício 9:
+// VENDAS DA SEMANA //
+
+const vendas = [100, 250, 400, 150, 300, 500, 200];
+
+let total = 0;
+let maior = vendas[0];
+let menor = vendas[0];
+
+for (let i = 0; i < vendas.length; i++) {
+    total += vendas[i];
+
+    if (vendas[i] > maior) {
+        maior = vendas[i];
+    }
+
+    if (vendas[i] < menor) {
+        menor = vendas[i];
+    }
+}
+
+let media = total / vendas.length;
+
+console.log(`Total Vendido: R$ ${total.toFixed(2)}`);
+console.log(`Média de Vendas: R$ ${media.toFixed(2)}`);
+console.log(`Maior Venda: R$ ${maior.toFixed(2)}`);
+console.log(`Menor Venda: R$ ${menor.toFixed(2)}`);
