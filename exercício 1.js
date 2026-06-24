@@ -137,3 +137,5 @@ for (let i = 0; i < produtos.length; i++) {
         console.log(`Produto: ${produto.nome} - Estoque OK`);
     }
 }
+
+
